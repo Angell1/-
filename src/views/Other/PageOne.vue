@@ -1,12 +1,12 @@
 <template>
-
+    <div>
+        page1
+    </div>
 </template>
 
 <script>
-// import 'bootstrap/dist/css/bootstrap.min.css'
-// import 'bootstrap/dist/js/bootstrap.min.js'
-export default {
 
+export default {
     data(){
         return{
             msg:'我是一个头部组件'
@@ -14,6 +14,6 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

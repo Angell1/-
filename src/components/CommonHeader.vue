@@ -65,7 +65,8 @@ header {
 
 .el-breadcrumb__item {
   .el-breadcrumb__inner {
-    color: #ffffff;
+    color: #666666;
+      font-weight: normal;
   }
   &:last-child {
     .el-breadcrumb__inner {

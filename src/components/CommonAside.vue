@@ -2,7 +2,7 @@
     <el-menu
       default-active="2"
       class="el-menu-vertical-demo"
-      background-color="#33aef0"
+      background-color="#545c64"
       text-color="#fff"
       active-text-color="#ffd04b">
 
@@ -43,30 +43,36 @@ export default {
                 {
                     path: '/',
                     label: '首页',
-                    icon: 'home'
+                    name:'home',
+                    icon: 's-home'
                 },
                 {
                     path: '/video',
                     label: '视频管理',
+                    name:'video',
                     icon: 'video-play'
                 },
                  {
                     path: '/user',
                     label: '用户管理',
+                    name:'user',
                     icon: 'user'
                 },
                 {
                     label: '其他',
-                    icon: 'user',
+                    icon: 'other',
+                    name:'other',
                     children:[
                         {
                             path: '/page1',
                             label: '页面1',
+                            name:'page1',
                             icon:'setting'
                         },
                          {
                             path: '/page2',
                             label: '页面2',
+                            name:'page2',
                             icon:'setting'
                         }
                     ]
@@ -76,7 +82,8 @@ export default {
     },
   methods: {
     clickMenu(item) {
-      this.$store.commit('selectMenu',item)
+      this.$router.push({name:item.name})
+      this.$store.commit('selectMenu',item);
     }
   },
 }

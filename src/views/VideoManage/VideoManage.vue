@@ -1,18 +1,19 @@
 <template>
     <div>
-    <h1>Sidebar</h1>
+        Video
     </div>
 </template>
+
 <script>
 
 export default {
     data(){
         return{
-            info:'我是子组件'
+            msg:'我是一个头部组件'
         }
-    },
+    }
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 
 </style>
